@@ -1,0 +1,21 @@
+{
+    "name": "DreadScale",
+    "short_name": "DreadScale",
+    "icons": [
+        {
+            "src": "/kill-android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/kill-android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#dc2626",
+    "background_color": "#111827",
+    "display": "standalone",
+    "start_url": "/",
+    "description": "A movie rating platform focused on content analysis and detailed user ratings across multiple categories"
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 - Movie API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">🎬 TP1 - Movie API</h1>
+            <p class="hero-subtitle">Recherche de films via API TMDB - Développé avec Node.js et Express</p>
+            
+            <div class="search-section">
+                <form id="movieForm" class="movie-search-form">
+                    <div class="search-input-container">
+                        <input type="text" 
+                               id="movieSearch" 
+                               class="search-input" 
+                               placeholder="Rechercher un film (ex: Fight Club, Avatar, Inception...)"
+                               required>
+                        <button type="submit" class="search-btn">
+                            <span class="search-icon">🔍</span>
+                            Rechercher
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="movie-categories">
+                    <h3>🎬 Découvrir des films:</h3>
+                    <div class="category-buttons">
+                        <button class="category-btn" data-category="popular">
+                            <span class="category-icon">🔥</span>
+                            <span class="category-text">Populaires</span>
+                        </button>
+                        <button class="category-btn" data-category="toprated">
+                            <span class="category-icon">⭐</span>
+                            <span class="category-text">Mieux notés</span>
+                        </button>
+                        <button class="category-btn" data-category="nowplaying">
+                            <span class="category-icon">🎭</span>
+                            <span class="category-text">Au cinéma</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="loading" class="loading-section" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Récupération des données du film...</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="notifications.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

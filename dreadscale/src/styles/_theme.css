@@ -1,0 +1,125 @@
+/* Dark theme colors */
+[data-theme="dark"] {
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-light: #9ca3af;
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-dark: #0f172a;
+  --border-color: #374151;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+  
+  /* Dark navbar and footer colors - same color, distinct from background */
+  --navbar-bg: rgba(31, 41, 55, 0.98);
+  --navbar-border: #4b5563;
+  --navbar-text: #f9fafb;
+  --navbar-text-hover: #dc2626;
+  --footer-bg: #1f2937;
+  --footer-text: #f9fafb;
+  --footer-text-secondary: #9ca3af;
+  --footer-border: #4b5563;
+}
+
+/* Light theme colors */
+[data-theme="light"] {
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-light: #9ca3af;
+  --bg-primary: #ffffff;
+  --bg-secondary: #eff6ff;
+  --bg-dark: #111827;
+  --border-color: #e5e7eb;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  /* Light navbar and footer colors - same slate color, distinct from white background */
+  --navbar-bg: rgba(71, 85, 105, 0.98);
+  --navbar-border: #64748b;
+  --navbar-text: #f8fafc;
+  --navbar-text-hover: #fbbf24;
+  --footer-bg: #475569;
+  --footer-text: #f8fafc;
+  --footer-text-secondary: #cbd5e1;
+  --footer-border: #64748b;
+  
+  /* Light blue colors for form elements */
+  --input-bg-light: #dbeafe;
+  --input-border-light: #bfdbfe;
+}
+
+/* Ensure theme transitions are smooth */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Override any conflicting styles */
+.navbar {
+  background: var(--navbar-bg) !important;
+  border-bottom-color: var(--navbar-border) !important;
+  color: var(--navbar-text) !important;
+}
+
+.nav-menu .nav-link {
+  color: var(--navbar-text) !important;
+}
+
+.nav-menu .nav-link:hover {
+  color: var(--navbar-text-hover) !important;
+}
+
+.nav-logo h2 {
+  color: var(--primary-color) !important;
+}
+
+.theme-toggle {
+  color: var(--navbar-text) !important;
+}
+
+.theme-toggle:hover {
+  background: rgba(220, 38, 38, 0.1) !important;
+}
+
+.bar {
+  background: var(--navbar-text) !important;
+}
+
+/* Footer theme overrides */
+.footer {
+  background: var(--footer-bg) !important;
+  border-top: 1px solid var(--footer-border);
+}
+
+.footer h3,
+.footer h4 {
+  color: var(--footer-text) !important;
+}
+
+.footer p {
+  color: var(--footer-text-secondary) !important;
+}
+
+.footer-section ul li a {
+  color: var(--footer-text-secondary) !important;
+}
+
+.footer-section ul li a:hover {
+  color: var(--navbar-text-hover) !important;
+}
+
+.social-link {
+  color: var(--footer-text-secondary) !important;
+}
+
+.social-link:hover {
+  color: var(--navbar-text-hover) !important;
+}
+
+.footer-bottom {
+  border-top-color: var(--footer-border) !important;
+  color: var(--footer-text-secondary) !important;
+}

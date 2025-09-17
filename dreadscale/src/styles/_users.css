@@ -1,0 +1,52 @@
+/* Users Section */
+.users {
+  background: var(--bg-secondary);
+}
+
+.users-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.auth-prompt {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auth-prompt-card {
+  background: var(--bg-primary);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.auth-prompt-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+
+.auth-prompt-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.auth-prompt-card p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.auth-prompt-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

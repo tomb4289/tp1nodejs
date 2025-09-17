@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Film - TP1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="movie-detail-page">
+        <div class="movie-detail-header">
+            <div class="container">
+                <a href="/" class="back-btn">
+                    <span class="back-icon">←</span>
+                    Retour à l'accueil
+                </a>
+            </div>
+        </div>
+        
+        <div id="moviesHeader" class="movies-header" style="display: none;">
+            <div class="container">
+                <h1 class="movies-title" id="moviesTitle">Films</h1>
+                <p class="movies-subtitle" id="moviesSubtitle">Découvrez une sélection de films</p>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading-section">
+            <div class="loading-spinner"></div>
+            <p>Chargement des détails du film...</p>
+        </div>
+        
+        <div id="movieDetails" class="movie-detail-content" style="display: none;">
+        </div>
+        
+        <div id="moviesGrid" class="movies-grid" style="display: none;">
+        </div>
+        
+        <div id="error" class="error-section" style="display: none;">
+        </div>
+    </div>
+
+    <script src="notifications.js"></script>
+    <script src="view.js"></script>
+</body>
+</html>

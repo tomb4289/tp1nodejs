@@ -1,0 +1,30 @@
+/* Sections */
+
+
+.section-header {
+  text-align: center;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-primary);
+    margin: 1.5rem
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+    margin: 0 auto 1.75rem auto;
+}
+
+/* Main content sections - hidden by default */
+.main-content-section {
+  display: none;
+}
+
+.main-content-section.active {
+  display: block;
+  padding-top: 6rem; /* Account for fixed navbar */
+}
